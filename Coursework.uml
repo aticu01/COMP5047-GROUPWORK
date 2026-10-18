@@ -146,4 +146,5 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_vgsdcsh-EfGaFKxsS3eSIQ" name="accomadtion staff" type="_ayw9MMh7EfGaFKxsS3eSIQ" association="_vgr2YMh-EfGaFKxsS3eSIQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_vgsdc8h-EfGaFKxsS3eSIQ" name="managetenants" type="_-9EMMMh7EfGaFKxsS3eSIQ" association="_vgr2YMh-EfGaFKxsS3eSIQ"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_WaPPAMryEfGLJ8sblTWBbw" name="AddNewTenant"/>
 </uml:Model>
