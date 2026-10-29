@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_L3WqoMh3EfGaFKxsS3eSIQ" name="Coursework">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_L3WqoMh3EfGaFKxsS3eSIQ" name="Identify Weaknesses">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_MDH1wMh3EfGaFKxsS3eSIQ">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -404,4 +404,123 @@
     <node xmi:type="uml:FlowFinalNode" xmi:id="_3HjtkM7TEfGTeJK2VoLUBg" name="FlowFinalNode" incoming="_569pUM7TEfGTeJK2VoLUBg"/>
     <node xmi:type="uml:FlowFinalNode" xmi:id="_tuEZMM7UEfGTeJK2VoLUBg" name="FlowFinalNode" incoming="_wTQ50M7UEfGTeJK2VoLUBg" inPartition="_33BoQM36EfGJXOmqSUXQeg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_oflnINN_EfGSLLZnHoQO5A" name="Machine Learning Model Management">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_fXwNANOMEfGSLLZnHoQO5A" name="Port4" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_uq_6UNOcEfGWafN1T6hfYQ" client="_oflnINN_EfGSLLZnHoQO5A" supplier="_LBxm0NOWEfGSLLZnHoQO5A" contract="_LBxm0NOWEfGSLLZnHoQO5A"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_LxsJMNOIEfGSLLZnHoQO5A" name="Train Model"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_jjEwMNOHEfGSLLZnHoQO5A" name="Find Problems"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_EzMGANOIEfGSLLZnHoQO5A" name="Machine Learning Models">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_R3RAUNOIEfGSLLZnHoQO5A" client="_EzMGANOIEfGSLLZnHoQO5A" supplier="_LxsJMNOIEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_osol0NOZEfGSLLZnHoQO5A" client="_EzMGANOIEfGSLLZnHoQO5A" supplier="_fXwNANOMEfGSLLZnHoQO5A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="__CGKwNN_EfGSLLZnHoQO5A" name="Tenant Cloud Resource Management">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_bsQLoNOMEfGSLLZnHoQO5A" name="Port11" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_dJ7qkNOMEfGSLLZnHoQO5A" name="Port12" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_GmO2UNObEfGSLLZnHoQO5A" name="Port14" aggregation="composite"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_n1ScMNObEfGSLLZnHoQO5A" name="Port15" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_n5z6YNOcEfGWafN1T6hfYQ" client="__CGKwNN_EfGSLLZnHoQO5A" supplier="_hIR8MNOcEfGWafN1T6hfYQ" contract="_hIR8MNOcEfGWafN1T6hfYQ"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_oVJykNOcEfGWafN1T6hfYQ" client="__CGKwNN_EfGSLLZnHoQO5A" supplier="_B0-_wNOZEfGSLLZnHoQO5A" contract="_B0-_wNOZEfGSLLZnHoQO5A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_sJWc8NOcEfGWafN1T6hfYQ" client="__CGKwNN_EfGSLLZnHoQO5A" supplier="_7feZwNOZEfGSLLZnHoQO5A" contract="_7feZwNOZEfGSLLZnHoQO5A"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_8ET8QNOFEfGSLLZnHoQO5A" name="Track Issues"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_860RANOGEfGSLLZnHoQO5A" name="Track Operations"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_k3CnkNOJEfGSLLZnHoQO5A" name="Plan Details"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_sZ7KMNOJEfGSLLZnHoQO5A" name="Allocate Resources"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_UF5wMNOKEfGSLLZnHoQO5A" name="Usage Metrics"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_u3qcINOCEfGSLLZnHoQO5A" name="Resource Allocation">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8HFxMNOKEfGSLLZnHoQO5A" client="_u3qcINOCEfGSLLZnHoQO5A" supplier="_sZ7KMNOJEfGSLLZnHoQO5A" contract="_sZ7KMNOJEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_AeLtQNOLEfGSLLZnHoQO5A" client="_u3qcINOCEfGSLLZnHoQO5A" supplier="_UF5wMNOKEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_DmSGoNOLEfGSLLZnHoQO5A" client="_u3qcINOCEfGSLLZnHoQO5A" supplier="_k3CnkNOJEfGSLLZnHoQO5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_4GRgwNOCEfGSLLZnHoQO5A" name="Cloud Service Resources">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_9JfpYNOKEfGSLLZnHoQO5A" client="_4GRgwNOCEfGSLLZnHoQO5A" supplier="_UF5wMNOKEfGSLLZnHoQO5A" contract="_UF5wMNOKEfGSLLZnHoQO5A"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_1Z_XUNObEfGSLLZnHoQO5A" client="_4GRgwNOCEfGSLLZnHoQO5A" supplier="_blY4MNOYEfGSLLZnHoQO5A" contract="_blY4MNOYEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="__Q0iQNOKEfGSLLZnHoQO5A" client="_4GRgwNOCEfGSLLZnHoQO5A" supplier="_sZ7KMNOJEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ib8q4NOZEfGSLLZnHoQO5A" client="_4GRgwNOCEfGSLLZnHoQO5A" supplier="_bsQLoNOMEfGSLLZnHoQO5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_-5wmwNOCEfGSLLZnHoQO5A" name="Telemetry">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_M86boNOHEfGSLLZnHoQO5A" client="_-5wmwNOCEfGSLLZnHoQO5A" supplier="_860RANOGEfGSLLZnHoQO5A" contract="_860RANOGEfGSLLZnHoQO5A"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_PmBL4NOHEfGSLLZnHoQO5A" client="_-5wmwNOCEfGSLLZnHoQO5A" supplier="_30vvENOGEfGSLLZnHoQO5A" contract="_30vvENOGEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_OM664NObEfGSLLZnHoQO5A" client="_-5wmwNOCEfGSLLZnHoQO5A" supplier="_GmO2UNObEfGSLLZnHoQO5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_NerowNODEfGSLLZnHoQO5A" name="User Reports">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Qqb2QNOHEfGSLLZnHoQO5A" client="_NerowNODEfGSLLZnHoQO5A" supplier="_30vvENOGEfGSLLZnHoQO5A" contract="_30vvENOGEfGSLLZnHoQO5A"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_7Cdy0NOHEfGSLLZnHoQO5A" client="_NerowNODEfGSLLZnHoQO5A" supplier="_8ET8QNOFEfGSLLZnHoQO5A" contract="_8ET8QNOFEfGSLLZnHoQO5A"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Z59w0NObEfGSLLZnHoQO5A" client="_NerowNODEfGSLLZnHoQO5A" supplier="_-ZmzINOaEfGSLLZnHoQO5A" contract="_-ZmzINOaEfGSLLZnHoQO5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_QeuSUNODEfGSLLZnHoQO5A" name="Cross-Tenant Benchmarking">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_z20w4NOaEfGSLLZnHoQO5A" client="_QeuSUNODEfGSLLZnHoQO5A" supplier="_Z-wmsNOaEfGSLLZnHoQO5A" contract="_Z-wmsNOaEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_71o8MNOHEfGSLLZnHoQO5A" client="_QeuSUNODEfGSLLZnHoQO5A" supplier="_8ET8QNOFEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_8YlRMNOHEfGSLLZnHoQO5A" client="_QeuSUNODEfGSLLZnHoQO5A" supplier="_860RANOGEfGSLLZnHoQO5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_8dcTUNOYEfGSLLZnHoQO5A" name="Authorisation">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_AcTVkNOZEfGSLLZnHoQO5A" client="_8dcTUNOYEfGSLLZnHoQO5A" supplier="_B4iKYNOWEfGSLLZnHoQO5A" contract="_B4iKYNOWEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_qRpw8NObEfGSLLZnHoQO5A" client="_8dcTUNOYEfGSLLZnHoQO5A" supplier="_n1ScMNObEfGSLLZnHoQO5A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_rXKbwNOAEfGSLLZnHoQO5A" name="Operator Controls">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_ZScvwNOZEfGSLLZnHoQO5A" name="Port6" aggregation="composite"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_nXVfcNOcEfGWafN1T6hfYQ" client="_rXKbwNOAEfGSLLZnHoQO5A" supplier="_DkbusNOaEfGSLLZnHoQO5A" contract="_DkbusNOaEfGSLLZnHoQO5A"/>
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_B4iKYNOWEfGSLLZnHoQO5A" name="Logging"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_GaamsNOBEfGSLLZnHoQO5A" name="Subscription Management">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xUyZUNOXEfGSLLZnHoQO5A" client="_GaamsNOBEfGSLLZnHoQO5A" supplier="_8ezsoNOVEfGSLLZnHoQO5A" contract="_8ezsoNOVEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_kK61gNOWEfGSLLZnHoQO5A" client="_GaamsNOBEfGSLLZnHoQO5A" supplier="_B4iKYNOWEfGSLLZnHoQO5A"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_v1ChANObEfGSLLZnHoQO5A" client="_GaamsNOBEfGSLLZnHoQO5A" supplier="_FZFrkNOMEfGSLLZnHoQO5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_q4GrwNOBEfGSLLZnHoQO5A" name="Operator Account Management">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_UFhfQNOWEfGSLLZnHoQO5A" client="_q4GrwNOBEfGSLLZnHoQO5A" supplier="_B4iKYNOWEfGSLLZnHoQO5A" contract="_B4iKYNOWEfGSLLZnHoQO5A"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xzH-UNObEfGSLLZnHoQO5A" client="_q4GrwNOBEfGSLLZnHoQO5A" supplier="_wPCcwNOYEfGSLLZnHoQO5A" contract="_wPCcwNOYEfGSLLZnHoQO5A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_8N8WMNOBEfGSLLZnHoQO5A" name="Log">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TB2bwNOWEfGSLLZnHoQO5A" client="_8N8WMNOBEfGSLLZnHoQO5A" supplier="_B4iKYNOWEfGSLLZnHoQO5A" contract="_B4iKYNOWEfGSLLZnHoQO5A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_YTIUsNOBEfGSLLZnHoQO5A" name="Model Retraining Pipeline">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_RSthwNOIEfGSLLZnHoQO5A" client="_YTIUsNOBEfGSLLZnHoQO5A" supplier="_LxsJMNOIEfGSLLZnHoQO5A" contract="_LxsJMNOIEfGSLLZnHoQO5A"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_3MauUNOHEfGSLLZnHoQO5A" client="_YTIUsNOBEfGSLLZnHoQO5A" supplier="_jjEwMNOHEfGSLLZnHoQO5A"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_rsE9ANOaEfGSLLZnHoQO5A" client="_YTIUsNOBEfGSLLZnHoQO5A" supplier="_SywNoNOHEfGSLLZnHoQO5A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_30vvENOGEfGSLLZnHoQO5A" name="AI Model Data"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_SywNoNOHEfGSLLZnHoQO5A" name="AI Model Data"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_cT1iUNOHEfGSLLZnHoQO5A" client="_SywNoNOHEfGSLLZnHoQO5A" supplier="_30vvENOGEfGSLLZnHoQO5A"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_YF1YMNOEEfGSLLZnHoQO5A" name="Subscriptions">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_-Fv2QNOKEfGSLLZnHoQO5A" client="_YF1YMNOEEfGSLLZnHoQO5A" supplier="_k3CnkNOJEfGSLLZnHoQO5A" contract="_k3CnkNOJEfGSLLZnHoQO5A"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_roKqMNOWEfGSLLZnHoQO5A" client="_YF1YMNOEEfGSLLZnHoQO5A" supplier="_BY5zoNOMEfGSLLZnHoQO5A" contract="_BY5zoNOMEfGSLLZnHoQO5A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_U24QQNOBEfGSLLZnHoQO5A" name="Model Performance Monitoring">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_1fiVwNOHEfGSLLZnHoQO5A" client="_U24QQNOBEfGSLLZnHoQO5A" supplier="_jjEwMNOHEfGSLLZnHoQO5A" contract="_jjEwMNOHEfGSLLZnHoQO5A"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Z7i1QNOHEfGSLLZnHoQO5A" client="_U24QQNOBEfGSLLZnHoQO5A" supplier="_SywNoNOHEfGSLLZnHoQO5A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_v6JvsNOJEfGSLLZnHoQO5A" name="Billing">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_HbSpUNOLEfGSLLZnHoQO5A" client="_v6JvsNOJEfGSLLZnHoQO5A" supplier="_k3CnkNOJEfGSLLZnHoQO5A"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_MES0wNOLEfGSLLZnHoQO5A" client="_v6JvsNOJEfGSLLZnHoQO5A" supplier="_UF5wMNOKEfGSLLZnHoQO5A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_qmo0YNOZEfGSLLZnHoQO5A" client="_v6JvsNOJEfGSLLZnHoQO5A" supplier="_dJ7qkNOMEfGSLLZnHoQO5A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_BY5zoNOMEfGSLLZnHoQO5A" name="Subscription Setup"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_FZFrkNOMEfGSLLZnHoQO5A" name="Subscription Setup"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_8ezsoNOVEfGSLLZnHoQO5A" name="Subscription Management"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_LBxm0NOWEfGSLLZnHoQO5A" name="ML Services"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_JNTlENOBEfGSLLZnHoQO5A" name="Branding Management">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_6NPyUNOYEfGSLLZnHoQO5A" client="_JNTlENOBEfGSLLZnHoQO5A" supplier="_TN9TMNOYEfGSLLZnHoQO5A" contract="_TN9TMNOYEfGSLLZnHoQO5A"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_wp0M4NObEfGSLLZnHoQO5A" client="_JNTlENOBEfGSLLZnHoQO5A" supplier="_gMHLsNOYEfGSLLZnHoQO5A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_PBZDkNOBEfGSLLZnHoQO5A" name="Broadcast Management">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ksNycNObEfGSLLZnHoQO5A" client="_PBZDkNOBEfGSLLZnHoQO5A" supplier="_HbF3MNOaEfGSLLZnHoQO5A" contract="_HbF3MNOaEfGSLLZnHoQO5A"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_cjWf0NOZEfGSLLZnHoQO5A" client="_PBZDkNOBEfGSLLZnHoQO5A" supplier="_ZScvwNOZEfGSLLZnHoQO5A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_qj80INOWEfGSLLZnHoQO5A" client="_FZFrkNOMEfGSLLZnHoQO5A" supplier="_BY5zoNOMEfGSLLZnHoQO5A"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_TN9TMNOYEfGSLLZnHoQO5A" name="Branding Customisation"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_blY4MNOYEfGSLLZnHoQO5A" name="Custom Branding"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_gMHLsNOYEfGSLLZnHoQO5A" name="Custom Branding"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_wPCcwNOYEfGSLLZnHoQO5A" name="Operator Login"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_B0-_wNOZEfGSLLZnHoQO5A" name="Authorisation"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_7feZwNOZEfGSLLZnHoQO5A" name="Billing"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_DkbusNOaEfGSLLZnHoQO5A" name="Send Broadcast"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_HbF3MNOaEfGSLLZnHoQO5A" name="Create Broadcast"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_SMj1sNOaEfGSLLZnHoQO5A" name="AI Use Data"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Z-wmsNOaEfGSLLZnHoQO5A" name="Benchmark Reports"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-ZmzINOaEfGSLLZnHoQO5A" name="Reporting"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_XStasNObEfGSLLZnHoQO5A" client="_GmO2UNObEfGSLLZnHoQO5A" supplier="_SMj1sNOaEfGSLLZnHoQO5A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_0mWT4NObEfGSLLZnHoQO5A" client="_gMHLsNOYEfGSLLZnHoQO5A" supplier="_blY4MNOYEfGSLLZnHoQO5A"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_hIR8MNOcEfGWafN1T6hfYQ" name="Cloud Services"/>
 </uml:Model>
